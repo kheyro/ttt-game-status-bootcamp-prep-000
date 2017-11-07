@@ -23,6 +23,6 @@ end
 
 def full?(board)
   board.all do |i|
-    position_taken?(board, i)
+    !(i == " " || i == nil)
   end
 end
