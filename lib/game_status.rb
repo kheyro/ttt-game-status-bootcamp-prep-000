@@ -18,7 +18,9 @@ WIN_COMBINATIONS = [
 def won(board)
   WIN_COMBINATIONS.each do |index|
     if position_taken(board, index[0]) && baord[index[0]] == baord[index[1]] && baord[index[0]] == baord[index[2]]
-
+      return win_combination
+    else
+      false
     end
   end
 end
