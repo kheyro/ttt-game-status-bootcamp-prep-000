@@ -20,3 +20,9 @@ def won?(board)
     position_taken?(board, win_combination[0]) && ( board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]] )
   end
 end
+
+def full?(board)
+  board.all do |i|
+    position_taken?(board, i)
+  end
+end
